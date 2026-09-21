@@ -1,3 +1,17 @@
+> [!IMPORTANT]
+> ### 版权与下架声明
+>
+> 本仓库是在 [**Ji-shuo/MRAgent**](https://github.com/Ji-shuo/MRAgent) 的源码基础上所做的**复现改造**，
+> 仅用于学习与课程作业，与原作者无任何隶属关系。
+> 原项目**未附带 LICENSE 文件**（依默认即"保留所有权利"）。
+>
+> **如果原作者或版权方不希望本仓库公开，请通过
+> [Issue](https://github.com/1027sun/MRAgent-DeepSeek-Repro/issues)
+> 或邮件 `13908493869@163.com` 联系我。**
+> **我会在收到通知后立即将仓库转为私有或删除，不作任何推诿。**
+>
+> 方法本身的著作权与引用权归原作者所有，请以原论文与原仓库为准。整改后的代码改动说明见下方"与原仓库的差异"。
+
 # MRAgent × DeepSeek：一次低成本复现与三臂消融
 
 > 对 [**Ji-shuo/MRAgent**](https://github.com/Ji-shuo/MRAgent) 的复现改造。
