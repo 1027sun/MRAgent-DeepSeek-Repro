@@ -1,0 +1,8 @@
+# normalise line endings so the repo stays LF-only regardless of the local OS
+* text=auto eol=lf
+
+# binary assets must not be line-ending converted
+*.png binary
+*.pdf binary
+*.pkl binary
+*.safetensors binary

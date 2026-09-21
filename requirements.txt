@@ -1,0 +1,24 @@
+# ------------------------------------------------ core pipeline
+openai==1.108.2          # chat + (optional) embeddings, OpenAI-compatible endpoints
+numpy==1.26.4            # pinned: 1.26.x is the last line with wheels for py3.11 here
+torch==2.8.0             # CPU build is enough: only used for L2 normalisation
+requests==2.32.5
+regex>=2023.0            # upstream pins 2022.4.24, which ships an sdist (needs a C compiler)
+                         # and is only used for one re.sub in eval/evaluation.py
+jsonschema==4.25.1       # rewrite / keyword JSON-schema validation
+python-dotenv==1.1.1     # load .env
+tqdm==4.67.1
+
+# ------------------------------------------------ evaluation
+nltk==3.9.1
+
+# ------------------------------------------------ local embedding backend
+# EMBED_BACKEND=local uses these instead of a paid embeddings API
+sentence-transformers==6.1.0
+transformers==5.17.0
+
+# ------------------------------------------------ experiment figures
+matplotlib==3.11.2
+seaborn==0.13.2
+pandas==3.0.6
+pillow==12.3.0

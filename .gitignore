@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------- secrets
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# ------------------------------------------------- datasets + artifacts
+# dataset_locomo.json is tracked (the benchmark ships with the upstream repo).
+# dataset_LM.json is 275 MB and lives in Git LFS upstream — fetch it yourself if needed.
+data/*.json
+!data/dataset_locomo.json
+data/LM/
+data/locomo/
+data/AR/
+
+# generated per-sample caches (rewrite / keyword / embedding)
+data/*/rewrite_*/
+data/*/keyword_*/
+data/*/embedding/
+
+# predictions / logs / usage
+result/
+log/
+*.log
+result_judge_*.jsonl
+
+# ------------------------------------------------------------ environments
+venv*/
+.venv/
+env/
+hf_cache/
+*_backup_original/
+
+# ------------------------------------------------------------------ python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ------------------------------------------------------- OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# figures: keep the committed exports, ignore the QA previews
+figs/_preview_*.png
