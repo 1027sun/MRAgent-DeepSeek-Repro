@@ -19,11 +19,12 @@ data/*/rewrite_*/
 data/*/keyword_*/
 data/*/embedding/
 
-# predictions / logs / usage
+# predictions / logs / usage  (upstream wrote these to the repo root; ours live in
+# results/ and ARE tracked, so anchor these patterns to the root)
 result/
 log/
 *.log
-result_judge_*.jsonl
+/result_judge_*.jsonl
 
 # ------------------------------------------------------------ environments
 venv*/
